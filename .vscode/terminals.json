@@ -1,0 +1,48 @@
+{
+  "autorun": true,
+  "autokill": true,
+  "terminals": [
+    {
+      "name": "Mobile",
+      "icon": "code",
+      "color": "terminal.ansiBlue",
+      "execute": false,
+      "focus": true,
+      "commands": ["cd mobile", "yarn android"]
+    },
+    {
+      "name": "Server",
+      "icon": "code",
+      "color": "terminal.ansiBlue",
+      "execute": true,
+      "commands": ["cd server", "yarn develop"]
+    },
+    {
+      "name": "Emulator",
+      "icon": "device-mobile",
+      "color": "terminal.ansiWhite",
+      "execute": true,
+      "commands": [
+        "cd C:/Users/phidn/AppData/Local/Android/Sdk/emulator",
+        "emulator.exe -avd Pixel_4_API_29"
+      ]
+    },
+    {
+      "name": "Ngrok",
+      "icon": "link",
+      "color": "terminal.ansiWhite",
+      "execute": true,
+      "commands": [
+        "taskkill /f /im ngrok.exe",
+        "ngrok http -subdomain=d715f9cb0d64 -region=ap 1337"
+      ]
+    },
+    {
+      "name": "Git",
+      "icon": "git-commit",
+      "color": "terminal.ansiWhite",
+      "shellPath": "C:/Program Files/Git/bin/bash.exe",
+      "command": ""
+    }
+  ]
+}

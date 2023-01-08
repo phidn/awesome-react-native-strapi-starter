@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.expo": true,
+    "**/.expo-shared": true,
+    "**/yarn.lock": true
+  },
+  "prettier.endOfLine": "crlf",
+  "terminal.integrated.shellIntegration.enabled": false
+}
